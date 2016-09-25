@@ -49,16 +49,12 @@ public TrieNode root;
 	}
 	
 	public static void main(String args[]){
-		TrieExample test=new TrieExample();
+		TrieExample trieTest=new TrieExample();
 		
-		test.insertIntoTrie(test.root,"bird");
-		test.insertIntoTrie(test.root,"birth");
-		test.insertIntoTrie(test.root,"bitch");
-		System.out.println("Root is "+test.root.data);
-		System.out.println(" Roots 1st child"+test.root.children.get(1).data);
-		System.out.println(" 2nd "+test.root.children.get(1).children.get(8).data);
-		System.out.println("3rd "+test.root.children.get(1).children.get(8).children.keySet()+" "+test.root.children.get(1).children.get(8).children.values());
-		System.out.println("Search result"+ test.searchInTrie(test.root,"bitch"));
+		trieTest.insertIntoTrie(trieTest.root,"bird");
+		trieTest.insertIntoTrie(trieTest.root,"birth");
+		
+		
 	}
 	  
 			  
